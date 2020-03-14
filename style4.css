@@ -1,0 +1,116 @@
+* body{
+	margin: 0px;
+	padding: 0px;
+}
+header{
+	display: flex;
+	
+}
+.container {
+    width: 100% !important;
+
+}
+
+.top-level-menu{
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    background: #000 !important;
+}
+
+.top-level-menu > li{
+	float: left;
+	position: relative;
+	height: 40px;
+	width: 207px;
+	background:black;
+	text-align: center;
+}
+.top-level-menu > li a{
+	/*line-height: -70px;*/
+
+}
+.top-level-menu  li:hover{background: green;}
+.top-level-menu li:hover > ul{display: inline;}
+.top-level-menu a{
+	font: bold 14px Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+    text-decoration: none;
+    padding: 0 0 0 9px;
+    display: block;
+    line-height: 30px;
+}
+.second-level-menu{
+	position: absolute;
+	top: 30px;
+    left: 0;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    margin-left: 0px;
+    display: none;
+
+}
+.second-level-menu > li{
+	position: relative;
+	height: 40px;
+	background: black;
+	width: 211px;
+	line-height: 30px;
+	margin-top: 1px;
+
+}
+.third-level-menu{
+	position: absolute;
+	top: 0px;
+	right: -152px;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	display: none;
+
+}
+.third-level-menu > li{
+	 height: 30px;
+    background: black;
+    width: 150px;
+    position: relative;
+}
+/*@media(max-width: 800px){*/
+	
+}
+.about {
+	width: 100%;
+	position: relative;
+	margin: auto;
+	padding: 1em;
+}
+.about h2 {
+	text-align: center;
+}
+
+.about p.desc {
+	text-align: center;
+}
+
+.about .row {
+	width: 100%;
+	margin: auto;
+}
+.about .col6{
+	width: 45% !important;
+	position: relative;
+	padding: 9px;
+	float: left;
+}
+.about .col7{
+	width: 45% !important;
+	position: relative;
+	padding: 9px;
+	float: right;
+}
+.about .blu{
+	color: blue;
+}
+

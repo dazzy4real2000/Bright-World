@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gallery</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	
+
+	<div class="container-slide">
+		<h1>Different Collections of Our Led Lights</h1>
+		<div class="slides fade">
+			<div class="number">1/7</div>
+			<img src="Smart Lights/slv-sitra-slv-360-wl-dm-231515-product-product-normal.jpg" width="100%">
+			<div class="caption">SLV Sitra</div>
+		</div>
+		<div class="slides fade">
+			<div class="number">2/7</div>
+			<img src="Smart Lights/uni-bright-proled-ip68-serie-uni-bright-1x3w-mono-ub-l13616a-product-product-normal.jpg" width="100%">
+			<div class="caption" style="text-align: center;">Bright Proled</div>
+		</div>
+		<div class="slides fade">
+			<div class="number">3/7</div>
+			<img src="Smart Lights/philips-hue-buratto-philips-hue-white-ambiance-spotlight-28extension-29-28dimmer-excl.-29-ma-5046131p8-product-product-normal.jpg" width="100%">
+			<div class="caption" style="text-align: center;">Philips Hue</div>
+		</div>
+		<div class="slides fade">
+			<div class="number">4/7</div>
+			<img src="Smart Lights/uni-bright-proled-ip68-serie-uni-bright-12x2w-rgb-ub-l13638-product-product-normal.jpg" width="100%">
+			<div class="caption" style="text-align: center;">Proled iP68</div>
+		</div>
+		<div class="slides fade">
+			<div class="number">5/7</div>
+			<img src="Smart Lights/absinthe-clickfit-absinthe-solo-cave-o-ab-12080-02-product-product-normal.jpg" width="100%">
+			<div class="caption" style="text-align: center;">Solo Cave</div>
+		</div>
+		<div class="slides fade">
+			<div class="number">6/7</div>
+			<img src="Led Lights/Decorative Lights/edison-filament-bulb.jpg" width="100%">
+			<div class="caption" style="text-align: center;">Edison Filament</div>
+		</div>
+		<div class="slides fade">
+			<div class="number">7/7</div>
+			<img src="Led Lights/Decorative Lights/victoria-filament.jpg" width="100%">
+			<div class="caption" style="text-align: center;">Victoria Filament</div>
+		</div>
+
+		<span class="previous" onclick="plusSlides(-1)">&#10094;</span>
+		<span class="next" onclick="plusSlides(1)">&#10095;</span>
+
+		<div style="text-align:center;">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		  <span class="dot" onclick="currentSlide(4)"></span> 
+		  <span class="dot" onclick="currentSlide(5)"></span> 
+		  <span class="dot" onclick="currentSlide(6)"></span> 
+		  <span class="dot" onclick="currentSlide(7)"></span> 
+		</div>	
+	</div>
+
+
+
+
+
+
+
+
+<script>
+	
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
